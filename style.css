@@ -144,7 +144,7 @@ body {
 .footer-container .btn {
   position: relative;
   left: 0;
-  width: 120px;
+  width: 250px;
   height: 50px;
   margin: 0;
   display: flex;
@@ -154,8 +154,6 @@ body {
 
 .footer-container .btn a {
   position: relative;
-  /* top: 0; */
-  /* left: 0; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -271,22 +269,12 @@ body {
   justify-content: flex-end;
   height: 320px;
   width: 320px;
-  /* height: 320px; */
-  /* width: 320px; */
-  /* background-color: rgba(255,255,255,0.06); */
-  /* -webkit-backdrop-filter: blur(20px); */
-  /* backdrop-filter: blur(20px); */
   border-radius: 50%;
   position: absolute;
-  /* margin: auto; */
   top: 24%;
   bottom: 0;
   left: 65%;
   right: 0;
-}
-
-img {
-  opacity: 0.95;
 }
 
 .hand {
@@ -447,7 +435,7 @@ img {
 
 .projects-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin-top: 6%;
   margin-left: 7%;
   margin-right: 7%;
@@ -455,11 +443,11 @@ img {
 }
 
 .car-shop {
-  max-width: 260px;
+  max-width: 16em;
   border-radius: 20px;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
   transition: all 0.5s;
-  margin-right: 12em;
+  /* border: blue solid 1px; */
 }
 
 .car-shop:hover {
@@ -467,7 +455,7 @@ img {
 }
 
 .netflix-clone {
-  max-width: 260px;
+  max-width: 16em;
   border-radius: 20px;
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
   transition: all 0.5s;
@@ -475,4 +463,100 @@ img {
 
 .netflix-clone:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 749px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .btn {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    /* margin: 0; */
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: blue solid 1px; */
+  }
+  .container .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 400;
+    z-index: 1;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+  }
+
+  .projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    /* border: blue solid 1px; */
+  }
+
+  .car-shop {
+    max-width: 16em;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+    /* border: blue solid 1px; */
+  }
+
+  .netflix-clone {
+    margin-top: 5%;
+    max-width: 16em;
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+  }
+
+  .business-card {
+    width: 82%;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
+    margin-top: 8%;
+    transition: all 0.5s;
+  }
+
+  .business-card:hover {
+    transform: scale(1.03);
+  }
+
+  .clock {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+  }
+  .img-clock {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+  }
 }

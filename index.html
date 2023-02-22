@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="“UTF-8”" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-	<meta charset= “UTF-8”>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio</title>    
-</head>
-
-<body>
+  <body>
     <section class="container">
       <div class="btn"><a href="index.html">Home</a></div>
-      <div class="btn"><a href="about.html" >Sobre</a></div>
-      <div class="btn"><a href="projects.html" >Projetos</a></div>
-    </section>	
-      
-   <section class="img-container">
-    <img class="business-card" src="Img/Full-Stack Web Developer.png" alt="business-card">
-   </section>
+      <div class="btn"><a href="about.html">Sobre</a></div>
+      <div class="btn"><a href="projects.html">Projetos</a></div>
+    </section>
+
+    <section class="img-container">
+      <img
+        class="business-card"
+        src="Img/Full-Stack Web Developer.png"
+        alt="business-card"
+      />
+    </section>
 
     <section class="clock">
-      <img src="/Img/clock.svg">
+      <img class="img-clock" src="/Img/clock.svg" alt="relogio" />
       <div class="hour hand" id="hour"></div>
       <div class="minute hand" id="minute"></div>
       <div class="seconds hand" id="seconds"></div>
@@ -28,10 +31,12 @@
 
     <footer>
       <section class="footer-container">
-        <div class="btn"><a href="https://www.linkedin.com/in/cassio-matsushita/">Linkedin</a></div>
+        <div class="btn">
+          <a href="https://www.linkedin.com/in/cassio-matsushita/">Linkedin</a>
+        </div>
       </section>
     </footer>
 
     <script src="clock.js"></script>
-</body>
+  </body>
 </html>
